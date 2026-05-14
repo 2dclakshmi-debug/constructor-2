@@ -6,48 +6,41 @@ using System.Threading.Tasks;
 
 namespace constructor_2
 {
-    class MyClass
+    class Employee
     {
-        int sid;
-        string name;
-        int age;
-     public MyClass(int stdid,string stdname,int stdage)
+        int Empid;
+        string Empname;
+        double Salary;
+     public Employee()
         {
-            sid = stdid;
-            name = stdname;
-            age = stdage;
-
+            Empid = 11;
+            Empname = "Raju";
+            Salary = 10000;
         }
-        public void display()
+        public void SalaryHike()
         {
-            //Console.WriteLine("Student id :" + sid);
-            //Console.WriteLine("Student Name :" + name);
-            //Console.WriteLine("Student Age :"+age);
-           
-
-            //Console.WriteLine("****************************************************");
-            Console.WriteLine(sid + "               " + name + "             " + age);
+            Console.WriteLine("Employee Detailss:");
+            Console.WriteLine("------------------");
+            Console.WriteLine("Empid" + "     " + "Empname" + "        " + "Empsalary");
+            Console.WriteLine(Empid + "          " + Empname + "          " + Salary);
+            int Hike = 10;
+            Salary = Salary + Salary * Hike/ 100;
+            Console.WriteLine("                                  ");
+            Console.WriteLine("Employee salary with hike:" + Salary);
+            
         }
         internal class Program
         {
             static void Main(string[] args)
             {
-                MyClass obj = new MyClass(11,"Ravi",20);
-                obj.display();
-                MyClass[] objs=new MyClass[3];
-                objs[0] = new MyClass(2, "Rani", 21);
-                objs[1] = new MyClass(3, "Rahul", 22);
-                objs[2] = new MyClass(4, "Raju", 23);
-                Console.WriteLine("Student details :");
-                Console.WriteLine("-----------------");
-                Console.WriteLine("Studentid" + "    " + "Studentname" + "     " + "Studentage");
-                for (int i = 0; i < objs.Length; i++)
-                {
-                   
-                    objs[i].display();
-                }
-
+               Employee emp = new Employee();
+                emp.SalaryHike();
+                Console.ReadLine();
             }
+           
+            
         }
+        
     }
+
 }
