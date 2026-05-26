@@ -29,18 +29,18 @@ namespace ConsoleApp1
 
     internal class Example1
     {
-        static void Main(string[] args)
-        {
-            Person person = new Person(19, "Raju");
-            person.display();
+        //static void Main(string[] args)
+        //{
+        //    Person person = new Person(19, "Raju");
+        //    person.display();
 
-            Person obj=new Person(person);
-            obj.age = 32;
-            obj.name = "Hari";
-            obj.display();
-            Console.WriteLine("press any key for closing");
-            Console.ReadKey();
+        //    Person obj=new Person(person);
+        //    obj.age = 32;
+        //    obj.name = "Hari";
+        //    obj.display();
+        //    Console.WriteLine("press any key for closing");
+        //    Console.ReadKey();
 
-        }
+        //}
     }
 }

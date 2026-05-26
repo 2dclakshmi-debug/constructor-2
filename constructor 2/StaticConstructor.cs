@@ -32,13 +32,13 @@ namespace constructor_2
     }
     internal class StaticConstructor
     {
-        static void Main(string[] args)
-        {
-            Student obj = new Student(11, "Rani");
-            obj.StudentDisplay();
-            Student obj1 = new Student(12, "Tanmay");
-            obj1.StudentDisplay();
-            Student.collegeDisplay();
-        }
+        //static void Main(string[] args)
+        //{
+        //    Student obj = new Student(11, "Rani");
+        //    obj.StudentDisplay();
+        //    Student obj1 = new Student(12, "Tanmay");
+        //    obj1.StudentDisplay();
+        //    Student.collegeDisplay();
+        //}
     }
 }
