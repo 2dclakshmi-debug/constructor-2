@@ -28,12 +28,13 @@ namespace copyConstructor
     }
     internal class Program
     {
-        static void Main(string[] args)
-        {
-            student obj = new student(11, "tanu");
-            obj.StudentDisplay();
-            student sobj=new student(obj);
-            sobj.StudentDisplay();
-        }
+        //static void Main(string[] args)
+        //{
+        //    student obj = new student(11, "tanu");
+        //    obj.StudentDisplay();
+        //    student sobj=new student(obj);
+        //    sobj.sid = 13;
+        //    sobj.StudentDisplay();
+        //}
     }
 }

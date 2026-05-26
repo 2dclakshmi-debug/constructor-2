@@ -31,12 +31,12 @@ namespace constructor_2
         }
         internal class Program
         {
-            static void Main(string[] args)
-            {
-               Employee emp = new Employee();
-                emp.SalaryHike();
-                Console.ReadLine();
-            }
+            //static void Main(string[] args)
+            //{
+            //   Employee emp = new Employee();
+            //    emp.SalaryHike();
+            //    Console.ReadLine();
+            //}
            
             
         }
